@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	.container
+		h1 Applicants
+		ul#applications.list-unstyled
+			for Justin in app
+				li #{Justin.name}
+				li #{Justin.bio}
+				li #{Justin.skills}
+				li #{Justin.years}
+				li #{Justin.why}
+
+				
